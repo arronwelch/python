@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+from collections.abc import Iterable,Iterator
+
+def g():
+    yield 1
+    yield 2
+    yield 3
+
+print('Iterable? [1,2,3]:',isinstance([1,2,3],Iterable))
+print('Iterable? \'abc\':',isinstance('abc',Iterable))
+print('Iterable? 123:',isinstance(123,Iterable))
+print('Iterable? g():',isinstance(g(),Iterable))
+
+print('Iterator? [1,2,3]:',isinstance([1,2,3],Iterator))
+print('Iterator? iter([1,2,3]):',isinstance(iter([1,2,3]),Iterator))
+print('Iterator? \'abc\':',isinstance('abc',Iterator))
+print('Iterator? 123:',isinstance(123,Iterator))
+print('Iterator? g():',isinstance(g(),Iterator))
+
+# iter list:
+print('for x in [1,2,3,4,5]:')
+for x in [1,2,3,4,5]:
+    print(x)
+
+print('for x in iter([1,2,3,4,5])')
+for x in iter([1,2,3,4,5]):
+    print(x)
+
+print('next():')
+x_iter=iter([1,2,3,4,5])
+
+print(next(x_iter))
+print(next(x_iter))
+print(next(x_iter))
+print(next(x_iter))
+print(next(x_iter))
+
+d = {'a':1,'b':2,'c':3}
+
+# iter each key:
+for k in d.keys():
+    print('key:',k)
+
+# iter each valus:
+for v in d.values():
+    print('valus:',v)
+
+# iter each key and value:
+for k,v in d.items():
+    print('key,value:',k,v)
+
