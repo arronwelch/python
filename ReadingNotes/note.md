@@ -270,6 +270,28 @@ Python简介:
     tuple
         另一种有序列表叫元组：tuple。tuple和list非常类似，但是tuple一旦初始化就不能修改，比如同样是列出同学的名字：
 
+函数式编程(Functional Programming):
+    Computer Compute
+    纯粹的函数式编程语言编写的函数没有变量，因此，任意一个函数，只要输入是确定的，输出就是确定的，这种纯函数我们称之为没有副作用。
+
+    高阶函数
+        Higher-order function
+        变量可以指向函数:f = abs
+        f(-10)
+
+        函数名也是变量
+        abs = 10
+
+        import builtins;builtins.abs = 10
+
+        
+        
+
+
+
+
+
+
         
         
     
