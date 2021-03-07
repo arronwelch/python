@@ -1,26 +1,23 @@
-Python简介: 
+### Python简介: 
     龟叔 Guido van Rossum 1989年 圣诞节期间
-
     TIOBE排行榜
-
     C语言适合开发那些追求运行速度、充分发挥硬件性能的程序。
     很多基本的已经写好的现成的东西，来帮助你加快开发进度。
-    Python就为我们提供了非常完善的基础代码库，覆盖了网络、文件、GUI、数据库、文本等大量内容，被形象地称作“内置电池（batteries included）”。
-
+    Python就为我们提供了非常完善的基础代码库，
+    覆盖了网络、文件、GUI、数据库、文本等大量内容，被形象地称作“内置电池（batteries included）”。
     第一个缺点就是运行速度慢
     第二个缺点就是代码不能加密
 
-第一个Python程序：
+### 第一个Python程序：
     exit()
     用单引号或者双引号括起来的文本在程序中叫字符串：'hello, world'
     cd
     python hello.py
 
-输入和输出:
+- ### 输入和输出:
     输出:print()
-
     print()会依次打印每个字符串，遇到逗号“,”会输出一个空格: 
-    >>> print('The quick brown fox', 'jumps over', 'the lazy dog')
+     >>> print('The quick brown fox', 'jumps over', 'the lazy dog')
     The quick brown fox jumps over the lazy dog
 
     Python解释器自动计算出结果300:
@@ -284,7 +281,8 @@ Python简介:
 
         import builtins;builtins.abs = 10
 
-        
+### 返回函数
+
         
 
 
