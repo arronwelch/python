@@ -124,20 +124,47 @@ print(f())
 L = list(filter(lambda n:n%2==1, range(1, 20)))
 print('using lambda replace func\'is_odd\':',L)
 
-def now():
-    print('2021-03-07')
 
-f = now
-a= f()
-print(a)
+# def now():
+#     print('2021-03-07')
+# 
+# f = now
+# a= f()
+# print(a)
+# print(f())
+# print()
+# print(now.__name__)
+# 
+# print(f.__name__)
 
-print(now.__name__)
 
 # Decorator
+# def log(func):
+#     def wrapper(*arg,**kw):
+#         print('call %s():' % func.__name__)
+#         return func(*arg,**kw)
+#     return wrapper
+# 
+# @log
+# def now():
+#     print('2021-03-07')
+# 
+# print()
+# print(now())
 
-def log(func):
-    def wrapper(*arg,**kw):
-        print('call %s():' % func.__name__)
-        return func(*arg,**kw)
-    return wrapper
+
+# def log(text):
+#     def decorator(func):
+#         def wrapper(*arg,**kw):
+#             print('%s %s():' % (text,func.__name__))
+#             return func(*arg,**kw)
+#         return wrapper
+#     return decorator
+# 
+# @log('execute')    
+# def now():
+#     print('2021-03-14')
+# 
+# print(now())
+
 
