@@ -38,8 +38,14 @@ print(now_arg())
 import time
 
 def metric(fn):
-    print('%s executed in %s ms' % (fn.__name__, 10.24))
-    return fn
+    @functools.wraps(fn)
+    def wrapper(*args,**kw):
+        start_time = time.time()
+        res = fn(*args,**kw)
+        stop_time = time.time()
+        print('%s executed in %s ms' % (fn.__name__,stop_time-start_time))
+        return res
+    return wrapper
 
 # 测试
 @metric
@@ -58,3 +64,5 @@ if f != 33:
     print('测试失败!')
 elif s != 7986:
     print('测试失败!')
+else:
+    print('测试成功!')
