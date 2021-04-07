@@ -38,3 +38,14 @@ class Dogs(Mammal,Runnable):
 class Bats(Mammal,Flyable):
     pass
 
+class RunnableMixIn(object):
+    def run(self):
+        print('Running...')
+
+class CarnivorousMinIn(object):
+    def fly(self):
+        print('Carniver...')
+
+class Dogss(Mammal,RunnableMixIn,CarnivorousMinIn):
+    pass
+
