@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 # class Student(object):
 #     def get_score(self):
 #         return self._score
