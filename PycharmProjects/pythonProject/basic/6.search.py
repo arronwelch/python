@@ -40,6 +40,9 @@ def binary_search(li,val):
 # # O(logn) < O(n)
 
 li = list(range(10000))
+print(len(li))
 print(linear_search(li,3891))
 print(binary_search(li,3891))
 
+for i in range(8):
+    print(i)
