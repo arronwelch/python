@@ -8,19 +8,33 @@ def partition(li,left,right):
         while left < right and li[right] >= tmp: #从右边开始找比tmp小的数，找到或者指针移到left位置推出循环
             right -= 1 #往左走一位
         li[left] = li[right] #把右边小于tmp的值放到空位left 或者 自己赋值给自己 注意right变成空位了
-        print(li,left,right)
+        # print(li,left,right)
         while left < right and li[left] <= tmp:
             left += 1
         li[right] = li[left]  # 把左边大于tmp的值放到空位right 或者 自己赋值给自己
-        print(li,left,right)
+        # print(li,left,right)
     li[left] = tmp #把tmp写回空位
+    return left # mid = left = right
+
+# li = [5,7,4,6,3,1,2,9,8]
+# print(li)
+# print('//'+'-'*30+'//')
+#
+# partition(li,0,len(li)-1)
+#
+# print('//'+'-'*30+'//')
+# print(li)
+
+def quick_sort(li,left,right):
+    if left < right: #至少两个元素
+        mid = partition(li,left,right)
+        quick_sort(li,left,mid-1)
+        quick_sort(li,mid+1,right)
 
 li = [5,7,4,6,3,1,2,9,8]
-print(li)
-print('//'+'-'*30+'//')
 
-partition(li,0,len(li)-1)
-
-print('//'+'-'*30+'//')
 print(li)
 
+quick_sort(li,0,len(li)-1)
+
+print(li)

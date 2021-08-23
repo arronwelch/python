@@ -1,3 +1,19 @@
 {
-    "python.pythonPath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+    "python.pythonPath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+    "files.associations": {
+        "*.txt": "c",
+        "*.prj": "c",
+        "*.prg": "c",
+        "*.sd": "c",
+        "*.sr": "c",
+        "*.hed": "c",
+        "*.tim": "c",
+        "*.dec": "c",
+        "*.pln": "c",
+        "*.pat": "c",
+        "*.bak": "c",
+        "*.log": "c",
+        "*.sum": "c",
+        "test.h": "c"
+    }
 }
