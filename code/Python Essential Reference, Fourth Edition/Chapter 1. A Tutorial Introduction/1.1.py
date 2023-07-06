@@ -2,13 +2,11 @@
 # -*- coding: utf-8 -*-
 # Running Python
 
+# python3 1.1.py
 # in python2
 # print "Hello World"
-
 # in python3
-# python3 helloworld.py
 print("Hello World")
-
 # use interactive Python as their desktop calculator.
 # >>> 6000 + 4523.50 + 134.12
 # 10657.620000000001
