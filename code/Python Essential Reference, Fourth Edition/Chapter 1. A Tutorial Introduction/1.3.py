@@ -31,11 +31,22 @@ if product == "game" and type == "priate memory" \
 
 suffix = ".pat"
 
-if suffix == ".htm":
-    content = "text/html"
-elif suffix == ".jpg":
-    content = "image/jpeg"
-elif suffix == ".png":
-    content = "imgage/png"
+# if suffix == ".htm":
+#     content = "text/html"
+# elif suffix == ".jpg":
+#     content = "image/jpeg"
+# elif suffix == ".png":
+#     content = "imgage/png"
+# else:
+#     raise RuntimeError("Unknow content type")
+
+s = "spam,TestStr"
+has_spam = "DefaultValue"
+if 'spam' in s:
+    has_spam = True
 else:
-    raise RuntimeError("Unknow content type")
+    has_spam = False
+
+print (s)
+print ("has_spam is ")
+print (has_spam)
