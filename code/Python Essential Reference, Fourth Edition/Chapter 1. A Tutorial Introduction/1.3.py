@@ -50,3 +50,7 @@ else:
 print (s)
 print ("has_spam is ")
 print (has_spam)
+has_spam = False
+print (has_spam)
+has_spam = 'spam' in s
+print (has_spam)
