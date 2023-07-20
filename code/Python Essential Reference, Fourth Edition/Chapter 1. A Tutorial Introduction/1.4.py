@@ -40,3 +40,12 @@ while year <= numyears:
     f.write("%3d %0.2f\n" % (year,principal))
     year += 1
 f.close()
+
+import sys
+sys.stdout.write("\nEnter your name :") # need '\n' to flush system streams
+name = sys.stdin.readline() # name with '\n'
+print("Hello,%s" % name, end='\n')
+
+# name = raw_input("Enter your name :") # Python2
+name = input("Enter your name :") # name without '\n' # Python3
+print("Hello,%s" % name, end='\n') # print show NO '%'
