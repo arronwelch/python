@@ -10,3 +10,17 @@ print(a)
 print(b)
 print(c)
 
+print('')
+
+print('''Content-type: text/html
+<h1> Hello World </h1>
+Click <a href="http://www.python.org">here</a>.
+''')
+
+print('')
+
+print("""Content-type: text/html
+<h1> Hello World </h1>
+Click <a href="http://www.python.org">here</a>.
+""")
+
