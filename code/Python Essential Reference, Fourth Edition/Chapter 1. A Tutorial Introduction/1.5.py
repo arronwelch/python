@@ -35,3 +35,15 @@ e = a[3:8]      # e = "lo Wo"
 print("c = \"%s\"" % c)
 print("d = \"%s\"" % d)
 print("e = \"%s\"" % e)
+
+# Strings concatenated : plus(+) operator
+g = a + " This is a test"
+print(g)
+
+x = "37"
+y = "42"
+z = x + y # z = "3742" (String Concatenation)
+print("z = \"%s\"" % z)
+
+z = int(x) + int(y) # z = 79 (Integer +)
+print("z = %d is %s" % (z,type(z)))
