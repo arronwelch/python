@@ -48,5 +48,12 @@ print("z = \"%s\"" % z)
 z = int(x) + int(y) # z = 79 (Integer +)
 print("z = %d is %s" % (z,type(z)))
 
+x = 3.4
 s = "The value of x is " + str(x)
+print(s)
+
+s = "The value of x is " + repr(x)
+print(s)
+
+s = "The value of x is " + format(x, "0.5f")
 print(s)
