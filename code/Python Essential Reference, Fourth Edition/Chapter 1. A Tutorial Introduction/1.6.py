@@ -29,3 +29,11 @@ print(names)
 names[0:2] = ['Dave', 'Mark', 'Jeff']   # Replace the first two items of
                                         # the list with the list on the right.
 print(names)
+
+a = [1,2,3] + [4,5]     # Result is [1,2,3,4,5]
+print(a)
+
+names = []      # An empty list
+print(names)
+names = list()  # An empty list
+print(names)
