@@ -37,3 +37,9 @@ names = []      # An empty list
 print(names)
 names = list()  # An empty list
 print(names)
+
+a = [1, "Dave", 3.14, ["Mark", 7, 9, [100, 101]], 10]
+
+print(a[1])         # Returns "Dave"
+print(a[3][2])      # Returns 9
+print(a[3][3][1])   # Returns 101
