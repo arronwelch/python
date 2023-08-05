@@ -26,3 +26,17 @@ c = item,   # 1-tuple (note that trailing comma)
 print(a)
 print(b)
 print(c)
+
+name, shares, price = stock
+print(name)
+print(shares)
+print(price)
+
+host, port = address
+print(host)
+print(port)
+
+first_name, last_name, phone = person
+print(first_name)
+print(last_name)
+print(phone)
