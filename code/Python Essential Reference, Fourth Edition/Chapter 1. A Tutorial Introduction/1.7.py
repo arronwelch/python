@@ -53,3 +53,8 @@ for line in open(filename):
     portfolio.append(stock)     # Append to list of records
     print(portfolio)
 
+total = 0.0
+for name, shares, price in portfolio:
+    total += shares * price
+    print(total)
+print(total)
