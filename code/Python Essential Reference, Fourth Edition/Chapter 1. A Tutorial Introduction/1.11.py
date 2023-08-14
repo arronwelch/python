@@ -19,5 +19,23 @@ quotient, remainder = divide(1456,33)
 print("1456 / 33 = %d --- %d" %(quotient,remainder))
 
 def connect(hostname,port,timeout=300):
-    PASS # Function body
-    print("Function body: timeout=%d" % timeout)
+    pass    # Function body
+    print("Function body: ")
+    print("hostname=\"%s\"" % hostname,end=',')
+    print("port=%d" % port,end=',')
+    print("timeout=%d" % timeout)
+
+connect('www.python.org',80)
+
+connect(port=80,hostname='www.python.org')
+
+count = 0   # a global variable
+print("count=%d" % count)
+
+def foo():
+    global count
+    count += 1  # Changes the global variable count
+
+foo()
+# After run foo(), print count value is 1
+print("count=%d" % count)
