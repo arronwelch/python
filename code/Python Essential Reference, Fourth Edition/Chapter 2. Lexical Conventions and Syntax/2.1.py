@@ -42,3 +42,6 @@ print("a = ",a)
 
 # The # character denotes a comment
 
+# the interpreter ignores all blank lines except when running in interactive mode
+# In this case, a blank line signals the end of input when typing a statement that
+# spans multiple lines.
