@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Variables and Arithmetic Expressions
+# 1.2 Variables and Arithmetic Expressions
 
 # python3 1.2.py
 # Listing 1.1 Simple Compound-Interest Calculation

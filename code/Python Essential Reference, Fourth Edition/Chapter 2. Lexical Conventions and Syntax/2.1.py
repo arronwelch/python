@@ -1,6 +1,7 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-# Line Structure and Indentation
+# 2.1 Line Structure and Indentation
 
 import math
 x = 1.2
@@ -45,3 +46,4 @@ print("a = ",a)
 # the interpreter ignores all blank lines except when running in interactive mode
 # In this case, a blank line signals the end of input when typing a statement that
 # spans multiple lines.
+

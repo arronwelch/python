@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Conditionals
+# 1.3. Conditionals
 
 # python3 1.3.py
 a = 1
