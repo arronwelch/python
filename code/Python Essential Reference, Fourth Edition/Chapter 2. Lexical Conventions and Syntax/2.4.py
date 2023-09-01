@@ -15,3 +15,4 @@
 # Adjacent strings (separated by white space,newline,or a line-continuation character) such as
 # "hello" 'world' are concatenated to form a single string "helloworld".
 
+# escape special characters
