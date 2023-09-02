@@ -15,8 +15,51 @@
 # Adjacent strings (separated by white space,newline,or a line-continuation character) such as
 # "hello" 'world' are concatenated to form a single string "helloworld".
 
-# escape special characters
 
+print("Table 2.1 Standard Character Escape Codes")
+print("Character\t\t\tDescription")
+print("\t\t\tNewline \
+continuation")
+
+print("\\ \t\t\tBackslash")
+
+print("\' \t\t\tSingle quote")
+
+print("\" \t\t\tDouble quote")
+
+print("\a \t\t\tBell")
+
+print("123", end='')
+print("\b \t\t\tBackspace")
+
+# Is it a Bug?
+print("\e \t\t\tEscape")
+
+print("\0 \t\t\tNull")
+
+print("\n \t\t\tLine feed")
+
+print("print('hello\\vworld')\t\tVertical tab")
+print('hello\vworld\tVertical tab')
+
+print("\t \t\tHorizontal tab")
+
+print("123", end='')
+print("\rCarriage return")
+
+print("\fForm feed")
+
+print("\361 \t Octal value (\\000 to \\377)")
+
+print("\u00f1 \t Unicode character (\\u0000 to \\uffff)")
+
+print("\U000000f1 \t Unicode character (\\U00000000 to \\Uffffffff)")
+
+print("\N{SPACE}Unicode character name:\\N{SPACE}")
+
+print("\xf1 \t Hexadecimal value (\\x00 to \\xff)")
+
+# escape special characters
 # \xhh  # Hexadecimal value (\x00 to \xff)
 print("Jalape\xf1o")
 
