@@ -16,3 +16,7 @@
 # "hello" 'world' are concatenated to form a single string "helloworld".
 
 # escape special characters
+
+# \xhh  # Hexadecimal value (\x00 to \xff)
+print("Jalape\xf1o")
+
