@@ -63,3 +63,16 @@ print("\xf1 \t Hexadecimal value (\\x00 to \\xff)")
 # \xhh  # Hexadecimal value (\x00 to \xff)
 print("Jalape\xf1o")
 
+# s = u"Jalape\u00f1o" # python2 pass
+# s = u"Jalape\u00f1o" # python3 syntax error
+
+# python2 -U test.py # emulate Unicode mode, like python3
+
+# \u U+0000 -> U+FFFF, eg:U+00F1
+print("\u00f1")
+
+# \U U+10000 and above, for example,\U00012345
+print("\U00012345")
+
+# Unicode characters also have a descriptive name.
+print("Jalape\N{LATIN SMALL LETTER N WITH TILDE}o")
