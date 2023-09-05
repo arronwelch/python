@@ -76,3 +76,15 @@ print("\U00012345")
 
 # Unicode characters also have a descriptive name.
 print("Jalape\N{LATIN SMALL LETTER N WITH TILDE}o")
+
+# http://www.unicode.org/chats
+print("\u4E80")
+
+# raw strings
+print(r'\n')
+print(r'c:\newdata\tests')
+print(r"\u4E80")
+print(r"\\u4E80")
+
+print('Jalape\xc3\xb10')
+print(b"Jalape\xc3\xb10")
