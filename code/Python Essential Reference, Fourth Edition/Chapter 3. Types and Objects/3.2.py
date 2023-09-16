@@ -27,3 +27,24 @@ def compare(a, b):
 
 b = 2
 compare(a, b)
+
+# All type objects are assigned names that can be used to perform type checking.
+s = [1, 2, 3]
+item = 4
+print('s = ', s)
+if type(s) is list:
+    s.append(item)
+print('s = ', s)
+
+d = {
+    "name" : "GOOG",
+    "shares" : 100,
+    "price" : 490.10,
+}
+
+t = { "count" : 1000 }
+
+print('d = ', d)
+if type(d) is dict:
+    d.update(t)
+print('d = ', d)
