@@ -48,3 +48,16 @@ print('d = ', d)
 if type(d) is dict:
     d.update(t)
 print('d = ', d)
+
+item = 5
+if isinstance(s, list):
+    s.append(item)
+print('s = ', s)
+
+t = { "percent" : 0.04 }
+if isinstance(d, dict):
+    d.update(t)
+print('d = ', d)
+# Because the isinstance() function is aware of inheritence, it is the preferred way to
+# check the type of any Python object.
+
