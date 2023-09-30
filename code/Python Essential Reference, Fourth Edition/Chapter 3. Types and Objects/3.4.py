@@ -6,6 +6,7 @@
 # immutable objects: numbers and strings
 # mutable objects: lists and dictionaries
 
+print('a and b refer to the same object:')
 a = [1,2,3,4]
 print('a = ', a)
 print('id(a) = ', id(a))
@@ -21,8 +22,9 @@ print('id(a) = ', id(a))
 print('a = ', a)
 print('id(b) = ', id(b))
 print('b = ', b)
-
 # Because a and b refer to the same object in this example
+
+print('\na shallow copy:')
 a = [ 1, 2, [3, 4] ]
 b = list(a) # Create a shallow copy of a.
 print('b is a :', (b is a))
@@ -36,6 +38,7 @@ print('b[2][0] = ', b[2][0])
 print('b = ', b)
 print('a = ', a)    # Notice the change inside a
 
+print('\na deep copy:')
 import copy
 a = [1, 2, [3, 4]]
 print('a = ', a)
