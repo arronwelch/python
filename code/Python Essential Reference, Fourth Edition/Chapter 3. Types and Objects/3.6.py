@@ -24,3 +24,8 @@ print('a = ', a)
 a = 1 > 0
 print('a = ', a)
 
+# 3.6.2.2 Numeric Types: Integers
+a = -2147483648
+print('a = ',a,type(a))
+b = 2147483647+1 # In Python3, the two types have been unified into a single integer type
+print('b = ',b,type(b))
