@@ -29,3 +29,9 @@ a = -2147483648
 print('a = ',a,type(a))
 b = 2147483647+1 # In Python3, the two types have been unified into a single integer type
 print('b = ',b,type(b))
+
+# 3.6.2.3 Numeric Types: Floating-point numbers
+a = 1.2345
+print('a = ',a,type(a))
+b = 1.2345e-30 - 1e-43
+print('b = ',b,type(b))
