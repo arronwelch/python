@@ -35,3 +35,9 @@ a = 1.2345
 print('a = ',a,type(a))
 b = 1.2345e-30 - 1e-43
 print('b = ',b,type(b))
+
+# 3.6.2.4 Complex numbers
+z = 1.2 + 3.4j
+print('z = ',z,type(z))
+print('z = ',z.conjugate(),type(z.conjugate()))
+
