@@ -39,5 +39,18 @@ print('b = ',b,type(b))
 # 3.6.2.4 Complex numbers
 z = 1.2 + 3.4j
 print('z = ',z,type(z))
-print('z = ',z.conjugate(),type(z.conjugate()))
+print('z.conjugate() = ',z.conjugate(),type(z.conjugate()))
 
+x = 12345
+print('x.numerator = ',x.numerator,type(x.numerator))
+print('x.denominator = ',x.denominator,type(x.denominator))
+
+y = 1.2345
+print('y.real = ',y.real,type(y.real))
+print('y.imag = ',y.imag,type(y.imag))
+print('y.conjugate() = ',y.conjugate(),type(y.conjugate()))
+
+print('y.as_integer_ratio() = ',y.as_integer_ratio(),type(y.as_integer_ratio()))
+print('y.is_integer() = ',y.is_integer(),type(y.is_integer()))
+print('y.hex() = ',y.hex(),type(y.hex()))
+print("y.fromhex('0x1.3c0831') = ",y.fromhex('0x1.3c0831'),type(y.fromhex('0x1.3c0831')))
