@@ -9,4 +9,6 @@ print('s =',s,type(s))
 l = list(s)
 print('l =',l,type(l))
 
-
+# s.append(x) | Appends a new element,x,to the end of s
+l.append('f')
+print('l =',l,type(l))
