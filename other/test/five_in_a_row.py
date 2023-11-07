@@ -8,6 +8,7 @@ for i in range(ROWS):
 EMPTY = 0
 BLACK = 1
 WHITE = 2
+color = {BLACK:"#000000", WHITE:"#FFFFFF"}
 last = BLACK # the first player is WHITE
 
 pygame.init()
@@ -30,7 +31,7 @@ while running:
                 map[row][col] = BLACK
                 last = BLACK
             else:
-                print("Already filled")
+                print("invalid move") # Already filled
 
     screen.fill("#EE9A49")
 
@@ -50,9 +51,9 @@ while running:
     for row in range(ROWS):
         for col in range(COLS):
             if map[row][col] == BLACK:
-                pygame.draw.circle(screen, "#000000", [25+col*50, 25+row*50], 25)
+                pygame.draw.circle(screen, color[BLACK], [25+col*50, 25+row*50], 25)
             elif map[row][col] == WHITE:
-                pygame.draw.circle(screen, "#FFFFFF", [25+col*50, 25+row*50], 25)
+                pygame.draw.circle(screen, color[WHITE], [25+col*50, 25+row*50], 25)
 
     pygame.display.update()
 
